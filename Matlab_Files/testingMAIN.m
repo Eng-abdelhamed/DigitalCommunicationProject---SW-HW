@@ -79,12 +79,12 @@ function testingMAIN()
     function launchBoth()
         try
             evalin('base', 'clear transmitted_data');
-            % Launch transmitter (positioned on left)
+          
             Testing_TX();
             tx_fig = gcf;
             set(tx_fig, 'Position', [50, 100, 1400, 850]);  
             pause(0.5); 
-            % Launch receiver (positioned on right)
+            
             Testing_RX();
             rx_fig = gcf;
             set(rx_fig, 'Position', [1500, 100, 1400, 850]);
@@ -96,7 +96,7 @@ function testingMAIN()
         end
     end
     function closeAll()
-        % Close all figure windows
+        
         close all;
         evalin('base', 'clear transmitted_data', '');
     end

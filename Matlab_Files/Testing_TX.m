@@ -1,10 +1,7 @@
 function Testing_TX()
-    % Create main figure
     fig = figure('Name', 'Digital Communication Transmitter', ...
                  'Position', [50, 50, 1400, 900], ...
                  'Color', [0.94 0.94 0.94]);
-
-    % Default Parameters
     params.fs = 1000;           % Sampling frequency
     params.duration = 0.05;     % Signal duration (50ms)
     params.f_signal = 50;       % Input sine wave frequency (fm)

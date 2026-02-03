@@ -1,23 +1,4 @@
 function Testing_RX()
-% ============================================================
-% RECEIVER (compatible with NEW TX that modulates line_coded(t))
-%
-% GUI shows ONLY:
-% 1) ASK received (time)
-% 2) Coherent ASK demod (correlator output in time)
-% 3) Symbol decision (recovered line symbols)
-% 4) Line decoding (recovered PCM bits)
-% 5) Line-coded spectrum (frequency domain)  [NO time-domain line-coded plot]
-% 6) Final comparison (original vs reconstructed)
-%
-% Removed from GUI:
-% - old Graph 5 (PCM plot)
-% - old Graph 6 (DAC plot)
-% - stage output boxes
-% - line-coded time-domain plot (graph 5)
-%
-% Note: line_wave is still built internally ONLY to compute FFT.
-% ============================================================
 
     fig = figure('Name', 'Digital Communication Receiver', ...
                  'Position', [50, 50, 1400, 900], ...
